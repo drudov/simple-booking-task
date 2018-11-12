@@ -1,0 +1,8 @@
+start tests:
+mvn clean test -Dbrowser=chrome -DbaseUrl=https://www.booking.com//
+
+Used
+Java: jdk1.8.0_191
+Web browser: Chrome
+Tech: Selenium WebDriver + Selenide  + Maven + TestNg
+IDE: IntelliJ IDEA Community Edition 2018.2.5 x64a
