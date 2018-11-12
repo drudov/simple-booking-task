@@ -12,7 +12,7 @@ public class BookingHomePage {
     private By dateSelector = By.cssSelector("div[class='xp__dates-inner']");
     private By calendarNextMonth = By.cssSelector("div[class='bui-calendar__control bui-calendar__control--next']");
     private By searchCity = By.cssSelector("input[type='search']");
-    private By searchButton = By.cssSelector("div[class='xp__button']");
+    private By searchButton = By.cssSelector(".xp__button");
 
     private String dateTemplate = "td[data-date='%s']";
 
