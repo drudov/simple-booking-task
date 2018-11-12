@@ -50,7 +50,7 @@
                         <selenide.start-maximized>true</selenide.start-maximized>
                     </systemPropertyVariables>
                     <suiteXmlFiles>
-                        <suiteXmlFile>testing.xml</suiteXmlFile>
+                        <suiteXmlFile>testng.xml</suiteXmlFile>
                     </suiteXmlFiles>
                 </configuration>
             </plugin>
