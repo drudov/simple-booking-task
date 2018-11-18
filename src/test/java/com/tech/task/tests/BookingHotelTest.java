@@ -12,7 +12,7 @@ import static com.codeborne.selenide.Selenide.*;
 
 public class BookingHotelTest {
 
-    @Test
+    @Test (priority = 0, description = "Book 1 room in Los Angeles")
     public void TestBooking() {
         BookingToCheckoutPage toCheckoutPage = new BookingToCheckoutPage();
         BookingHeader pageHeader = new BookingHeader();

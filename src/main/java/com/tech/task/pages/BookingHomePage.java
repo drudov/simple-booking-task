@@ -1,7 +1,9 @@
 package com.tech.task.pages;
 
 import com.tech.task.driver.ElementsController;
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
+import org.testng.annotations.Test;
 
 import static com.codeborne.selenide.Selenide.*;
 
@@ -16,6 +18,9 @@ public class BookingHomePage {
 
     private String dateTemplate = "td[data-date='%s']";
 
+
+
+    @Step("Choose date")
     public BookingHomePage selectSearchPeriod(String startDate, String endDate) {
         startDate = String.format(dateTemplate, startDate);
         endDate = String.format(dateTemplate, endDate);
@@ -27,13 +32,14 @@ public class BookingHomePage {
 
         return this;
     }
-
+    @Step("Type to the search field")
     public BookingHomePage selectCityToSearch(String cityName){
         $(searchCity).sendKeys(cityName);
 
         return this;
     }
 
+    @Step("Click search")
     public BookingSearchResultsPage clickSearchButton(){
         elementsController.clickElement(searchButton);
 

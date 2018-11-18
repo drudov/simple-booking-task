@@ -1,5 +1,5 @@
 start tests:
-mvn clean test -Dbrowser=chrome -DbaseUrl=https://www.booking.com//
+mvn clean test -Dbrowser=chrome -DbaseUrl=https://www.booking.com// io.qameta.allure:allure-maven:serve
 
 Used
 Java: jdk1.8.0_191
